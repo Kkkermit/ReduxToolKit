@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --color-purple: #570987;
 }
 
 @keyframes fadeIn {
@@ -40,10 +42,10 @@
 
 .header {
   text-shadow:
-		-1px -1px 0 #aa2eaf,
-		1px -1px 0 #95309a,
-		-1px 1px 0 #a03bda,
-		1px 1px 0 #cb26d1;
+		-1px -1px 0 #f700ff,
+		1px -1px 0 #f200ff,
+		-1px 1px 0 #f200ff,
+		1px 1px 0 #f700ff;
   font-size: 56px;
   font-weight: 900;
   color: #570987;
@@ -66,4 +68,29 @@
   align-items: center;
   justify-content: center;
   margin-top: 40px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .redux-logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.redux-logo {
+  will-change: filter;
+  transition: filter 300ms;
+  z-index: 100;
+}
+
+.redux-logo:hover {
+  filter: drop-shadow(0 0 2em var(--color-purple));
 }
