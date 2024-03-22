@@ -60,3 +60,10 @@
 .header:hover {
   transform: scale(1.1);
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
