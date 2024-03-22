@@ -11,6 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @keyframes fadeIn {
+    from {
+    opacity: 0;  
+    }    
+    to {
+    opacity: 1;
+    }
+  }
 }
 
 .header-container {
@@ -23,6 +32,11 @@
 }
 
 .header {
+  text-shadow:
+		-1px -1px 0 #aa2eaf,
+		1px -1px 0 #95309a,
+		-1px 1px 0 #a03bda,
+		1px 1px 0 #cb26d1;
   font-size: 56px;
   font-weight: 900;
   color: #570987;
