@@ -1,6 +1,5 @@
-// ActionTypes.ts
-export const ADD_TODO = 'ADD_TODO';
-export const TOGGLE_TODO = 'TOGGLE_TODO';
+export const ADD_TODO = "ADD_TODO";
+export const TOGGLE_TODO = "TOGGLE_TODO";
 
 export interface AddTodoAction {
   type: typeof ADD_TODO;
