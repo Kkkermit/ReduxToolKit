@@ -2,11 +2,11 @@ import "../Styles/index.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Todo, TodoState } from "../Reducers/taskReducer";
 import { ADD_TODO, TOGGLE_TODO } from "../Reducers/index";
-import store from "../Store/store";
 import ReduxLogo from "../Assets/redux.svg";
 import config from "../Config/index.json";
 import alt from "../Config/altText.json";
 import { useState } from "react";
+import { Action } from "@reduxjs/toolkit/react";
 
 const Header = config.header;
 const ReduxLogoAlt = alt.index.reduxlogo;
@@ -62,3 +62,7 @@ const Index: React.FC = () => {
 };
 
 export default Index;
+function rootReducer(_state: unknown, _action: Action<string>): unknown {
+throw new Error("Function not implemented.");
+}
+
