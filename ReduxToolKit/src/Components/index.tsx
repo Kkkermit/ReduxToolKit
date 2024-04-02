@@ -63,6 +63,5 @@ const Index: React.FC = () => {
 
 export default Index;
 function rootReducer(_state: unknown, _action: Action<string>): unknown {
-throw new Error("Function not implemented.");
-}
+throw new Error("Function not implemented.");}
 
