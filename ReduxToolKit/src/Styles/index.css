@@ -131,3 +131,43 @@
 .task-button:active {
   background-color: #f200ff;
 }
+
+.task-ul:empty {
+  display: none;
+}
+
+.task-ul {
+  font-size: 24px;
+  font-weight: 900;
+  border: 3px solid white;
+  width: 1500px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.task-section {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .header {
+    width: 300px;
+  }
+
+  .task-container {
+    width: 300px;
+    margin-left: 2rem;
+  }
+
+  .task-ul {
+    width: 300px;
+  }
+}

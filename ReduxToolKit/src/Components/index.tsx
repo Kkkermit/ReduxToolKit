@@ -51,8 +51,8 @@ const Index: React.FC = () => {
           <button className="task-button" onClick={handleAddTodo}>{Button}</button>
           <ul className="task-ul">
             {todos.map((todo: Todo) => (
-              <li
-                className="task-li"
+              <section
+                className="task-section"
                 key={todo.id}
                 onClick={() => handleToggleTodo(todo.id)}
                 style={{
@@ -60,7 +60,7 @@ const Index: React.FC = () => {
                 }}
               >
                 {todo.text}
-              </li>
+              </section>
             ))}
           </ul>
         </div>
