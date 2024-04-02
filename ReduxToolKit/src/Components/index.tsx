@@ -38,7 +38,9 @@ const Index: React.FC = () => {
           <header className="header">{Header}</header>
         </div>
         <div className="logo-container">
-          <img className="redux-logo" src={ReduxLogo} alt={ReduxLogoAlt[0]} />
+          <a href="https://redux-toolkit.js.org/" target="_blank" rel="noopener noreferrer">
+          <img className="redux-logo" src={ReduxLogo} alt={ReduxLogoAlt[0]}/>
+          </a>
         </div>
         <div className="task-container">
           <input 

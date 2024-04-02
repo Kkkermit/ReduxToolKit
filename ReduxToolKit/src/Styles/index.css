@@ -89,6 +89,7 @@
   will-change: filter;
   transition: filter 300ms;
   z-index: 100;
+  cursor: pointer;
 }
 
 .redux-logo:hover {
