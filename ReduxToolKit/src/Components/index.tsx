@@ -56,7 +56,7 @@ const Index: React.FC = () => {
                 key={todo.id}
                 onClick={() => handleToggleTodo(todo.id)}
                 style={{
-                  textDecoration: todo.completed ? "line-through" : "none",
+                  textDecoration: todo.completed ? "line-through #f200ff 5px" : "none",
                 }}
               >
                 {todo.text}

@@ -120,6 +120,7 @@
   border-radius: 10px;
   font-weight: 900;
   transition: transform 0.3s ease-in-out, 300ms;
+  cursor: pointer;
 }
 
 .task-button:hover {
@@ -148,6 +149,15 @@
   text-decoration: overline;
   text-decoration-color: #f200ff;
   text-decoration-thickness: 3px;
+  transition: 0.3s, background-color 0.1s ease-in-out;
+}
+
+.task-ul:hover {
+  border: 3px solid #f200ff;
+}
+
+.task-ul:active {
+  background-color: #3B3B3B
 }
 
 .task-section {
@@ -173,4 +183,8 @@
   .task-ul {
     width: 300px;
   }
+}
+
+.task-section style {
+  color: #570987;
 }
