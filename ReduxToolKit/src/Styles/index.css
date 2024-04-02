@@ -127,6 +127,7 @@
   transform: scale(1.1);
   background-color: #3B3B3B;
 }
+
 .task-button:active {
   background-color: #f200ff;
 }

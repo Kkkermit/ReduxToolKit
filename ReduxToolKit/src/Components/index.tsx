@@ -5,6 +5,7 @@ import { ADD_TODO, TOGGLE_TODO } from "../Reducers/index";
 import ReduxLogo from "../Assets/redux.svg";
 import config from "../Config/index.json";
 import alt from "../Config/altText.json";
+import placeholder from '../Config/placeholder.json'
 import { useState } from "react";
 import { Action } from "@reduxjs/toolkit/react";
 
@@ -12,6 +13,7 @@ const Header = config.header;
 const Button = config.button;
 
 const ReduxLogoAlt = alt.index.reduxlogo;
+const Placeholder = placeholder.index.placeholder;
 
 
 const Index: React.FC = () => {
@@ -42,7 +44,7 @@ const Index: React.FC = () => {
           <input 
             className="task-input"
             type="text"
-            placeholder="Enter Task"
+            placeholder={Placeholder[0]}
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
