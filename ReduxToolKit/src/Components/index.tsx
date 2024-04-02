@@ -9,7 +9,10 @@ import { useState } from "react";
 import { Action } from "@reduxjs/toolkit/react";
 
 const Header = config.header;
+const Button = config.button;
+
 const ReduxLogoAlt = alt.index.reduxlogo;
+
 
 const Index: React.FC = () => {
   const dispatch = useDispatch();
@@ -35,16 +38,18 @@ const Index: React.FC = () => {
         <div className="logo-container">
           <img className="redux-logo" src={ReduxLogo} alt={ReduxLogoAlt[0]} />
         </div>
-        <div>
-          <input
+        <div className="task-container">
+          <input 
+            className="task-input"
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
-          <button onClick={handleAddTodo}>Add Todo</button>
-          <ul>
+          <button className="task-button" onClick={handleAddTodo}>{Button}</button>
+          <ul className="task-ul">
             {todos.map((todo: Todo) => (
               <li
+                className="task-li"
                 key={todo.id}
                 onClick={() => handleToggleTodo(todo.id)}
                 style={{
