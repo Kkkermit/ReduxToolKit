@@ -38,11 +38,43 @@ yarn add @reduxjs/toolkit
 
 5. Access State: Access the application state using useSelector hook or getState method from the Redux store.
 
+### Example:
+
+```js
+import { configureStore, createSlice } from "@reduxjs/toolkit";
+
+// Define a slice
+const counterSlice = createSlice({
+  name: "counter",
+  initialState: {
+    value: 0,
+  },
+  reducers: {
+    increment(state) {
+      state.value += 1;
+    },
+    decrement(state) {
+      state.value -= 1;
+    },
+  },
+});
+
+// Create a Redux store
+const store = configureStore({
+  reducer: counterSlice.reducer,
+});
+
+// Export actions for use in components
+export const { increment, decrement } = counterSlice.actions;
+
+export default store;
+```
+
 - Documentation
-  For more detailed documentation and usage examples, refer to the official Redux Toolkit documentation.
+  For more detailed documentation and usage examples, refer to the [official Redux Toolkit documentation.](https://redux-toolkit.js.org/)
 
 - Contributing
-  If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the Redux Toolkit GitHub repository. Contributions are welcome!
+  If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the [Redux Toolkit GitHub repository.](https://github.com/reduxjs/redux-toolkit) Contributions are welcome!
 
 - License
-  Redux Toolkit is open-source software licensed under the MIT License.
+  Redux Toolkit is open-source software licensed under the [MIT License.](https://opensource.org/license/mit)
