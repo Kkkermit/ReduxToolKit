@@ -42,6 +42,7 @@ const Index: React.FC = () => {
           <input 
             className="task-input"
             type="text"
+            placeholder="Enter Task"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
