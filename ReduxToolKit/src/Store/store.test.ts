@@ -1,4 +1,5 @@
 import { todoReducer } from '../Reducers/taskReducer';
+import { describe, it, expect } from 'vitest'; 
 import { ADD_TODO, TOGGLE_TODO, AddTodoAction, ToggleTodoAction } from '../Reducers/index';
 
 describe('todoReducer', () => {
@@ -24,7 +25,7 @@ describe('todoReducer', () => {
 
   it('should return the same state for unknown action types', () => {
     const initialState = { todos: [] };
-    const action = { type: 'UNKNOWN_ACTION', payload: 'Test todo' } as any; // Casting to any to suppress type error
+    const action = { type: 'UNKNOWN_ACTION', payload: 'Test todo' } as any;
     const newState = todoReducer(initialState, action);
     expect(newState).toEqual(initialState);
   });
