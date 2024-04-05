@@ -93,6 +93,10 @@ In order to setup this repository and run the code for you self, you will need t
 
 To edit the text on page, visit **`index.tsx`** found in `components` folder.
 
+## Running -
+
+When using script command `npm run dev`, it will launch the app on [localhost](http://localhost:5173/) on port 5173 unless otherwise specified. If port 5173 is already in use, Vite will automatically launch the local host on port `5174`. If that port is taken up, the end number will increase in increments of 1 **``i++``**
+
 ## Scripts -
 
 List of all scripts runnable; found in `package.json`
@@ -111,6 +115,17 @@ List of all scripts runnable; found in `package.json`
 
 Unit testing on this repo is done with [vitest](https://vitest.dev/), vite's own testing framework. Along with vitest, unit testing is also run with [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/). To configure more tests, please use either docs, or pre-existing testing file found in this repo as a template.
 
+## Versions -
+
+All code was produced on Node v18.13.0 -
+**The code has not been tested on older/ newer Node versions. If you want to use this repo, we suggest using v18.13.0 for minimal errors**
+
+## Troubleshooting -
+
+For troubleshooting the code, please use docs [official Redux Toolkit documentation.](https://redux-toolkit.js.org/). For issues with package, try using Node v18.13.0 or uninstalling/ deleting `node_modules` and re-installing with `npm i`. If all else fails and you haven't edited any of the base code, open an issue on the repo [here](https://github.com/Kkkermit/ReduxToolKit/issues). If you've updated the code and changed, that's on you, you must figure out the issue, try looking through docs. **DO NOT OPEN AN ISSUE ON THE REPO!!!!**
+
 ## Got stuck or need help ##
 
 - Contact me on discord: [Kkermit.](https://discord.com/users/526853643962679323) or create a discussion on main repository found [here](https://github.com/Kkkermit/ReduxToolKit/discussions)
+
+### If you are a fan of the repo and want to support it, please feel free to leave a star :) 
