@@ -78,3 +78,39 @@ export default store;
 
 - License
   Redux Toolkit is open-source software licensed under the [MIT License.](https://opensource.org/license/mit)
+
+# Setting up the repo 
+
+In order to setup this repository and run the code for you self, you will need to: 
+
+- Either `clone` or `fork` the repo to your device. 
+
+- Run command in terminal **``cd ReduxToolKit``** to go into the file.
+
+- Run **``npm i``** in order to install `node_modules`.
+
+- Run **`npm run dev`** to launch the app in [localhost](http://localhost:5173/) : `http://localhost:5173/`
+
+To edit the text on page, visit **`index.tsx`** found in `components` folder.
+
+## Scripts -
+
+List of all scripts runnable; found in `package.json`
+
+**`npm run dev`** [Initializes local host on machine on port 5173]
+
+**`npm run build`** [Runs the build script, creates dist file ready for deployment]
+
+**`npm run lint`** [Runs the lint function editable in `.eslintrc.cjs`]
+
+**`npm run preview`** [Creates preview in terminal, fake launch port 4173]
+
+**`npm run test`** [Runs unit testing on files that include `.test.ts?(x)`]
+
+## Testing -
+
+Unit testing on this repo is done with [vitest](https://vitest.dev/), vite's own testing framework. Along with vitest, unit testing is also run with [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/). To configure more tests, please use either docs, or pre-existing testing file found in this repo as a template.
+
+## Got stuck or need help ##
+
+- Contact me on discord: [Kkermit.](https://discord.com/users/526853643962679323) or create a discussion on main repository found [here](https://github.com/Kkkermit/ReduxToolKit/discussions)
