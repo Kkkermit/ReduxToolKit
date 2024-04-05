@@ -1,0 +1,53 @@
+02b6fe8144baf2f6c6638c66a553257a
+/* istanbul ignore next */
+function cov_2g84l4odxr() {
+  var path = "/Users/joshuaeaton/Desktop/ReduxToolKit/ReduxToolKit/src/Store/store.ts";
+  var hash = "7296b1fc0a9224495ca563185d203f1f79323ffe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/joshuaeaton/Desktop/ReduxToolKit/ReduxToolKit/src/Store/store.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 4,
+          column: 14
+        },
+        end: {
+          line: 4,
+          column: 38
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "7296b1fc0a9224495ca563185d203f1f79323ffe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2g84l4odxr = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2g84l4odxr();
+import { legacy_createStore as createStore } from 'redux';
+import { todoReducer } from "../Reducers/taskReducer";
+const store =
+/* istanbul ignore next */
+(cov_2g84l4odxr().s[0]++, createStore(todoReducer));
+export default store;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMmc4NGw0b2R4ciIsImFjdHVhbENvdmVyYWdlIiwibGVnYWN5X2NyZWF0ZVN0b3JlIiwiY3JlYXRlU3RvcmUiLCJ0b2RvUmVkdWNlciIsInN0b3JlIiwicyJdLCJzb3VyY2VzIjpbInN0b3JlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGxlZ2FjeV9jcmVhdGVTdG9yZSBhcyBjcmVhdGVTdG9yZSB9IGZyb20gJ3JlZHV4JztcbmltcG9ydCB7IHRvZG9SZWR1Y2VyIH0gZnJvbSBcIi4uL1JlZHVjZXJzL3Rhc2tSZWR1Y2VyXCI7XG5cbmNvbnN0IHN0b3JlID0gY3JlYXRlU3RvcmUodG9kb1JlZHVjZXIpO1xuXG5leHBvcnQgZGVmYXVsdCBzdG9yZTtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQWVZO0lBQUFBLGNBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUFDLGNBQUE7SUFBQTtFQUFBO0VBQUEsT0FBQUEsY0FBQTtBQUFBO0FBQUFELGNBQUE7QUFmWixTQUFTRSxrQkFBa0IsSUFBSUMsV0FBVyxRQUFRLE9BQU87QUFDekQsU0FBU0MsV0FBVyxRQUFRLHlCQUF5QjtBQUVyRCxNQUFNQyxLQUFLO0FBQUE7QUFBQSxDQUFBTCxjQUFBLEdBQUFNLENBQUEsT0FBR0gsV0FBVyxDQUFDQyxXQUFXLENBQUM7QUFFdEMsZUFBZUMsS0FBSyIsImlnbm9yZUxpc3QiOltdfQ==

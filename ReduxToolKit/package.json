@@ -2,18 +2,25 @@
   "name": "reduxtoolkit",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "react-scripts test"
+    "test": "cross-env jest --collectCoverage=false --forceExit",
+    "test:no-coverage": "cross-env jest --collectCoverage=false", 
+    "test:silent": "cross-env jest --collectCoverage=false --reporters=jest-silent-reporter",
+    "test:failures": "cross-env jest --onlyFailures --collectCoverage=false",
+    "test-watch": "cross-env jest --watch --collectCoverage=false",
+    "update-snapshots": "cross-env jest --updateSnapshot",
+    "jest-single": "jest --coverage=false"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",
     "@testing-library/react": "^14.2.2",
     "@types/jest": "^29.5.12",
+    "crypto": "^1.0.1",
+    "enzyme": "^3.11.0",
     "express": "^4.19.2",
     "http-proxy-middleware": "^3.0.0",
     "react": "^18.2.0",
