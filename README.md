@@ -115,6 +115,43 @@ List of all scripts runnable; found in `package.json`
 
 Unit testing on this repo is done with [vitest](https://vitest.dev/), vite's own testing framework. Along with vitest, unit testing is also run with [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/). To configure more tests, please use either docs, or pre-existing testing file found in this repo as a template.
 
+- Example of unit testing using `vitest`
+
+```js
+import { todoReducer } from './taskReducer';
+import { describe, it, expect } from 'vitest'; 
+import { ADD_TODO, TOGGLE_TODO, AddTodoAction, ToggleTodoAction } from './index';
+
+describe('todoReducer', () => {
+  it('should handle ADD_TODO', () => {
+    const initialState = { todos: [] };
+    const action: AddTodoAction = { type: ADD_TODO, payload: 'Test todo' };
+    const newState = todoReducer(initialState, action);
+    expect(newState.todos).toHaveLength(1);
+    expect(newState.todos[0].text).toEqual('Test todo');
+    expect(newState.todos[0].completed).toBeFalsy();
+  });
+
+  it('should handle TOGGLE_TODO', () => {
+    const initialState = {
+      todos: [
+        { id: 1, text: 'Test todo', completed: false }
+      ]
+    };
+    const action: ToggleTodoAction = { type: TOGGLE_TODO, payload: 1 };
+    const newState = todoReducer(initialState, action);
+    expect(newState.todos[0].completed).toBeTruthy();
+  });
+
+  it('should return the same state for unknown action types', () => {
+    const initialState = { todos: [] };
+    const action = { type: 'UNKNOWN_ACTION', payload: 'Test todo' } as any;
+    const newState = todoReducer(initialState, action);
+    expect(newState).toEqual(initialState);
+  });
+});
+```
+
 ## Versions -
 
 All code was produced on Node v18.13.0 -
