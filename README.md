@@ -167,6 +167,7 @@ For troubleshooting the code, please use docs [official Redux Toolkit documentat
 
 ### If you are a fan of the repo and want to support it, please feel free to leave a star :) 
 
+-----------------------------------------------------------------------------------------------
 
 # Unit testing
 
